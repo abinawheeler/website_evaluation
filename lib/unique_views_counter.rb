@@ -24,7 +24,7 @@ class UniqueViewsCounter
 
   def print_result
     # Print out in decending order the numbwer of unique visits to each path
-    unique_path_counts.sort_by { |path, ips| [-ips.count] }.map { |path, ips| "#{ips.count} unique views to page #{path}" }.join("\n") 
+    unique_path_counts.sort_by { |path, ips| [-ips.count] }.map { |path, ips| "#{ips.count} unique views to page #{path}" }.join("\n")
   end
 
   private
